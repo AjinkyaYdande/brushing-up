@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-family: fantasy;
+    font-weight: 300;
+    border-bottom: 4px solid orange;
+    border-right: 2px solid orange;
+    border-left: 2px solid orange;
+    width: 200px;
+    text-align: center;
+}
+
+img{
+    width: 350px;
+    height: 250px;
+    margin: 8px;
+    position: relative;
+    overflow: hidden;
+  
+}
+/* Shiny effect */
+img::before{
+    content: '';
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+
+    background-color: black;
+    height: 200px;
+    width: 100px;
+    border-radius: 50%;
+    left: -70px;
+    transform: skewX(-30deg);
+}
+
+img:hover::before{
+    animation: slide 1s;
+}
+
+@keyframes slide{
+    0%,100%{
+        left:-70px
+    }50%{
+        left: 100%;
+    }
+}
