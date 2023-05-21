@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.android-head{
+    width: 230px;
+    height:110px;
+    background-color:#A0C939 ;
+    border-radius: 400px 400px 0 0;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 1s;
+}
+.android-head:hover{
+    transform: scale(1.1);
+}
+.eye{
+    width: 26px;
+    height: 26px;
+    background-color: #000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+}
+.android-left-eye{
+    top: 54%;
+    left: 22%;
+}
+.android-right-eye{
+    top: 54%;
+    right: 22%;
+}
+.android-body{
+    width: 230px;
+    height:250px;
+    margin-top: 4%;
+    background-color:#A0C939 ;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0px 0px 80px 80px;
+}
+.android-legs{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+.legs{
+    width: 50px;
+    height:80px;
+    background-color:#A0C939 ;
+    border-radius: 0 0 400px 400px ;
+    top: 30%;
+    margin: 2px;
+    
+}
+.android-left-leg{
+    right: 20%;
+    top:80%
+}
+.android-right-leg{
+    right: 20%;
+}
+.android-hands{
+    position: absolute;
+    display: flex;
+    top: 33%;
+    width: 30%;
+    left: 35%;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.hand{
+    width: 50px;
+    height:140px;
+    background-color:#A0C939 ;
+    border-radius: 400px 400px 400px 400px ;
+}
+.android-left-hand{
+    position: relative;
+    left:5%;
+  
+}
+.android-right-hand{
+    position: relative;
+    right:5%;   
+}
+
+.android-horns{
+    position: relative;
+    border: 0px solid red;
+    height: 50px;
+    display: flex;
+    margin-bottom: -20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.horn{
+    width: 10px;
+    height: 50px;
+    background-color: #A0C939;
+    border-radius: 12px;
+}
+.android-left-horn{
+    border: 0px solid red;
+    transform: rotate(336deg);
+}
+.android-right-horn{
+    border: 0px solid red;
+    transform: rotate3d(1,1,1,45deg);
+}
