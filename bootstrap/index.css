@@ -4,3 +4,7 @@
 .btn-danger:hover{
     background-color: burlywood;
 }
+.col{
+    background-color: cornsilk;
+    border: 1px solid  mediumvioletred;
+}
