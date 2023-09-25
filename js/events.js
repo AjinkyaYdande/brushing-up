@@ -1,6 +1,6 @@
 var button = document.getElementsByTagName("button")[0];
 console.log(button,"button")
 
-button.addEventListener("click",function(){
+button.addEventListener("mouseenter",function(){
     console.log("clicked")
 })
