@@ -9,9 +9,10 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
-button.addEventListener("click",function(){
+button.addEventListener("click", function () {
+  if (input.value.length > 0) {
     var li = document.createElement("li");
-    console.log(input.value)
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
-})
+  }
+});
