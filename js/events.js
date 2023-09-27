@@ -20,14 +20,18 @@ function createElementList() {
   input.value = "";
 }
 
-button.addEventListener("click", function () {
+function addAfterClick() {
   if (inputLength() > 0) {
     createElementList();
   }
-});
+}
 
-input.addEventListener("keypress", function (event) {
-  if (inputLength() > 0 && event.keyCode === 13) {
-    createElementList();
-  }
-});
+function addAfterKeypress(event){
+    if (inputLength() > 0 && event.keyCode === 13) {
+        createElementList();
+      }
+}
+
+button.addEventListener("click", addAfterClick);
+
+input.addEventListener("keypress",addAfterKeypress);
