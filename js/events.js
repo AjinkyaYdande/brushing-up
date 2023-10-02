@@ -8,6 +8,18 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
+var deleteBtns = document.getElementsByClassName("delete");
+var items = ul.getElementsByTagName("li");
+
+for(var i = 0;i<deleteBtns.length;i++){
+  deleteBtns[i].addEventListener("click",removeParent,false)
+}
+
+function removeParent(e){
+  e.target.removeEventListener("click",removeParent,false);
+  e.target.parentNode.remove();
+}
+
 
 function inputLength() {
   return input.value.length;
