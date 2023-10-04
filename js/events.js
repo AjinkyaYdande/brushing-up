@@ -14,17 +14,14 @@ var items = ul.getElementsByTagName("li");
 for(var i = 0;i<items.length;i++){
   deleteBtns[i].addEventListener("click",removeParent,false)
 }
-
 function removeParent(e){
   e.target.removeEventListener("click",removeParent,false);
   e.target.parentNode.remove();
 }
 
-
 function inputLength() {
   return input.value.length;
 }
-
 function createElementList() {
   var btn = document.createElement("button");
   btn.innerHTML= "Delete";
