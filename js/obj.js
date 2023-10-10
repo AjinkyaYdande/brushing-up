@@ -3,5 +3,6 @@
 const name = "Zinc";
 
 const obj = {
-    name 
+    name : "test",
+    [1+2] : "wierd object property define"
 }
