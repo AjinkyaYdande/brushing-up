@@ -8,4 +8,4 @@ const first = ()=>{
 }
 
 const newF = first();
-newF();
+newF(); 
