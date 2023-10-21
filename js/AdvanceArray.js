@@ -8,3 +8,8 @@ const doub = arr.forEach((num)=>{
 })
 
 console.log(newL,"newL")
+
+
+const array = arr.map((a)=>{
+    return a * 2;
+})
