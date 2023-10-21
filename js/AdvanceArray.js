@@ -14,3 +14,6 @@ const array = arr.map(a=> a * 2)
 
 
 const filtered = arr.filter(a=> a>2)
+
+
+const reduced = arr.reduce((accumulator,a)=> accumulator + a,0)
