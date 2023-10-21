@@ -11,3 +11,6 @@ console.log(newL,"newL")
 
 
 const array = arr.map(a=> a * 2)
+
+
+const filtered = arr.filter(a=> a>2)
