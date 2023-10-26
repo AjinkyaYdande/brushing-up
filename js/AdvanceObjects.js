@@ -10,3 +10,10 @@ const objecT4 = {
     }
 }
 // instantiation
+
+class Player{
+    constructor(name,type{
+        this.name = name;
+        this.type = type;
+    })
+}
