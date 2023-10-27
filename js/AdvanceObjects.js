@@ -16,4 +16,7 @@ class Player{
         this.name = name;
         this.type = type;
     })
+    intROduce(){
+        
+    }
 }
