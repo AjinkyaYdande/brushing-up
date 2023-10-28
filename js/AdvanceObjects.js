@@ -17,6 +17,6 @@ class Player{
         this.type = type;
     })
     intROduce(){
-        
+        console.log(`i am ${this.name}`)
     }
 }
